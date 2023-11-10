@@ -10,4 +10,8 @@ public class FabricaPersonagem {
         personagemClasseMap.putIfAbsent(key, new PersonagemClasse(classe));
         return personagemClasseMap.get(key);
     }
+
+    public void printTamanhoMap(){
+            System.out.println("tamanho da lista de tipos: " + personagemClasseMap.size());
+    }
 }
